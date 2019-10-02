@@ -1,0 +1,11 @@
+<div class="content">
+  <ng-container *ngIf="customId$ | async as customId">
+    <div>customId: {{ customId }}</div>
+
+    <!-- It's not possible to close an outlet and route to another in the same routerLink -->
+    <!-- <a [routerLink]="['/', 'books', customId, { outlets: { modal: null, tab: ['summary'] } }]">Close and go to summary</a> -->
+    <button (click)="routeToSummary(customId)">Close and go to summary</button>
+  </ng-container>
+
+  <a [routerLink]="['', { outlets: { modal: null } }]">Close</a>
+</div>

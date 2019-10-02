@@ -123,6 +123,11 @@
           }
         }
       }
-    }},
-  "defaultProject": "routing-poc"
+    }
+  },
+  "defaultProject": "routing-poc",
+  "cli": {
+    "analytics": "cd71d23b-12af-421f-b9fa-8ad76b858279",
+    "packageManager": "yarn"
+  }
 }

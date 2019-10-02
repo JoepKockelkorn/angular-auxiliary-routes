@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  position: relative;
+}
+
+a {
+  display: inline-block;
+  border: 1px solid aqua;
+  padding: 5px;
+  &.active {
+    background: aqua;
+  }
+  & + a {
+    margin-left: 10px;
+  }
+}
+
+nav {
+  margin: 5px 0;
+}
